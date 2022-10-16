@@ -1,0 +1,16 @@
+M:\VS Projects\MatiApps\MatiApps\bin\Debug\net5.0\MatiApps.exe
+M:\VS Projects\MatiApps\MatiApps\bin\Debug\net5.0\MatiApps.deps.json
+M:\VS Projects\MatiApps\MatiApps\bin\Debug\net5.0\MatiApps.runtimeconfig.json
+M:\VS Projects\MatiApps\MatiApps\bin\Debug\net5.0\MatiApps.runtimeconfig.dev.json
+M:\VS Projects\MatiApps\MatiApps\bin\Debug\net5.0\MatiApps.dll
+M:\VS Projects\MatiApps\MatiApps\bin\Debug\net5.0\MatiApps.pdb
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\MatiApps.csproj.AssemblyReference.cache
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\MatiApps.GeneratedMSBuildEditorConfig.editorconfig
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\MatiApps.AssemblyInfoInputs.cache
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\MatiApps.AssemblyInfo.cs
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\MatiApps.csproj.CoreCompileInputs.cache
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\MatiApps.dll
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\refint\MatiApps.dll
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\MatiApps.pdb
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\MatiApps.genruntimeconfig.cache
+M:\VS Projects\MatiApps\MatiApps\obj\Debug\net5.0\ref\MatiApps.dll
