@@ -21,39 +21,33 @@ namespace MatiApps
                 Console.Beep();
                 Console.Clear();
                 i++;
-
-
+                pole(p);
+                if ((p[1] == p[2]) && (p[2] == p[3]) && (p[1]!=' '))
+                {
+                    Console.WriteLine("Krzyzyk wygrywa");
+                    break;
+                }
                 //Kolej na
                 if (i % 2 == 0)
                 {
                     int move;
                     do
                     {
-                        Console.Clear();
-                        Console.WriteLine("Teraz kolej X");
-                        pole(p);
-                        move = Convert.ToInt32(Console.ReadLine());
                         
-                        //if(win1=true)
-                        //{
-                        //    Console.WriteLine("Krzyzyk wygrywa");
-                        //}
-
-
-
+                        Console.WriteLine("Teraz kolej X");
+                        move = Convert.ToInt32(Console.ReadLine());
                     } while (p[move] == 'O' || p[move] == 'X');
                     p[move] = 'X';
+                    
                 }
                 else
                 {
                     int move;
                     do
                     {
-                        Console.Clear();
+                        
                         Console.WriteLine("Teraz kolej O");
-                        pole(p);
                         move = Convert.ToInt32(Console.ReadLine());
-                       
                     } while (p[move] == 'O' || p[move] == 'X');
                     p[move] = 'O';
                 }
