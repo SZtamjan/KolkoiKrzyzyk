@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "M:\\VS Projects\\MatiApps\\MatiApps\\MatiApps.csproj",
+      "projectUniqueName": "M:\\VS Projects\\MatiApps\\KolkoiKrzyzyk\\MatiApps\\MatiApps.csproj",
       "projectName": "MatiApps",
-      "projectPath": "M:\\VS Projects\\MatiApps\\MatiApps\\MatiApps.csproj",
+      "projectPath": "M:\\VS Projects\\MatiApps\\KolkoiKrzyzyk\\MatiApps\\MatiApps.csproj",
       "packagesPath": "C:\\Users\\Damian\\.nuget\\packages\\",
-      "outputPath": "M:\\VS Projects\\MatiApps\\MatiApps\\obj\\",
+      "outputPath": "M:\\VS Projects\\MatiApps\\KolkoiKrzyzyk\\MatiApps\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "M:\\Visual Studio Shared\\NuGetPackages"
