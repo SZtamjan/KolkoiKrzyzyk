@@ -14,28 +14,23 @@ namespace MatiApps
             
             bool win1 =false;
             int i=0;
-
+            Console.Beep();
+            Console.Clear();
+            Console.WriteLine(i % 2 == 0 ? "Teraz kolej O" : "Teraz kolej X");
+            pole(p);
+            
             do
             {
-                //Funkcje
-                Console.Beep();
-                Console.Clear();
+
                 i++;
-                pole(p);
-                if ((p[1] == p[2]) && (p[2] == p[3]) && (p[1]!=' '))
-                {
-                    Console.WriteLine("Krzyzyk wygrywa");
-                    break;
-                }
+
                 //Kolej na
                 if (i % 2 == 0)
                 {
                     int move;
                     do
                     {
-                        
-                        Console.WriteLine("Teraz kolej X");
-                        move = Convert.ToInt32(Console.ReadLine());
+                            move = Convert.ToInt32(Console.ReadLine());
                     } while (p[move] == 'O' || p[move] == 'X');
                     p[move] = 'X';
                     
@@ -45,16 +40,19 @@ namespace MatiApps
                     int move;
                     do
                     {
-                        
-                        Console.WriteLine("Teraz kolej O");
                         move = Convert.ToInt32(Console.ReadLine());
                     } while (p[move] == 'O' || p[move] == 'X');
                     p[move] = 'O';
                 }
 
-                //Tutaj pod tym napisz kiedyś sprawdzanie czy są 3 obok siebie te same znaki
                 
-            } while(win1=true);
+                //Funkcje
+                Console.Beep();
+                Console.Clear();
+                Console.WriteLine(i % 2 == 0 ? "Teraz kolej O" : "Teraz kolej X");
+                pole(p);
+                win1 = win(p);
+            } while(win1==false);
         }
         static void pole(char[] p)
         {
@@ -76,13 +74,16 @@ namespace MatiApps
             Console.Write("|");
             Console.WriteLine(p[9]);
         }
-       /* static void win(char[] p)
+        static bool win(char[] p)
         {
-            bool winiary;
-            if (p[1] == p[2] && p[2] == p[3])
+            bool lmao = false;
+            if ((p[1] == p[2]) && (p[2] == p[3]) && (p[1] != ' '))
             {
-                winiary = true;
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[1]);
             }
-        }*/
+
+            return lmao;
+        }
     }
 }
