@@ -120,6 +120,11 @@ namespace MatiApps
                 lmao = true;
                 Console.WriteLine("Wygrywa " + p[3]);
             }
+            if (lmao == true)
+            {
+                Console.WriteLine("Kliknij dowolny przycisk aby wyjsc");
+                Console.ReadKey();
+            }
 
             return lmao;
         }
