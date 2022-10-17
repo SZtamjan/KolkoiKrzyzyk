@@ -77,10 +77,48 @@ namespace MatiApps
         static bool win(char[] p)
         {
             bool lmao = false;
+            //Wygrane w poziomie
             if ((p[1] == p[2]) && (p[2] == p[3]) && (p[1] != ' '))
             {
                 lmao = true;
                 Console.WriteLine("Wygrywa " + p[1]);
+            }
+            if ((p[4] == p[5]) && (p[5] == p[6]) && (p[2] != ' '))
+            {
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[4]);
+            }
+            if ((p[7] == p[8]) && (p[8] == p[9]) && (p[7] != ' '))
+            {
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[7]);
+            }
+            //Wygrane w pionie
+            if ((p[1] == p[4]) && (p[4] == p[7]) && (p[1] != ' '))
+            {
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[1]);
+            }
+            if ((p[2] == p[5]) && (p[5] == p[8]) && (p[2] != ' '))
+            {
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[2]);
+            }
+            if ((p[3] == p[6]) && (p[6] == p[9]) && (p[3] != ' '))
+            {
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[3]);
+            }
+            //Wygrane po skosie
+            if ((p[1] == p[5]) && (p[5] == p[9]) && (p[1] != ' '))
+            {
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[1]);
+            }
+            if ((p[3] == p[5]) && (p[5] == p[7]) && (p[3] != ' '))
+            {
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[3]);
             }
 
             return lmao;
