@@ -21,27 +21,38 @@ namespace MatiApps
             
             do
             {
-
                 i++;
-
                 //Kolej na
                 if (i % 2 == 0)
                 {
+                    bool nr;
                     int move;
                     do
                     {
-                            move = Convert.ToInt32(Console.ReadLine());
-                    } while (p[move] == 'O' || p[move] == 'X');
+                        // move = Convert.ToInt32(Console.ReadLine());
+                        nr = int.TryParse(Console.ReadLine(), out move);
+                    } while ((move < 1 || move > 9) || p[move] == 'O' || p[move] == 'X'); //Pilnuje czy user wstawia w zajęte pole i Pilnuje żeby user wpisywał nr pola w zakresie
                     p[move] = 'X';
                     
                 }
                 else
                 {
+                    bool nr;
                     int move;
                     do
                     {
-                        move = Convert.ToInt32(Console.ReadLine());
-                    } while (p[move] == 'O' || p[move] == 'X');
+                        //move = Convert.ToInt32(Console.ReadLine());
+                        nr = int.TryParse(Console.ReadLine(), out move);
+                        try
+                        {
+
+                        }
+                        catch (Exception)
+                        {
+
+                            throw;
+                        }
+                    } while (!(nr) || (move < 1 || move > 9) || p[move] == 'O' || p[move] == 'X'); //Pilnuje czy user wstawia w zajęte pole i Pilnuje żeby user wpisywał nr pola w zakresie
                     p[move] = 'O';
                 }
 
@@ -78,12 +89,18 @@ namespace MatiApps
         {
             bool lmao = false;
             //Wygrane w poziomie
-            if ((p[1] == p[2]) && (p[2] == p[3]) && (p[1] != ' '))
+            if(p[1].Equals(p[2]) && p[2].Equals(p[3]) && (p[1] != ' '))
             {
                 lmao = true;
                 Console.WriteLine("Wygrywa " + p[1]);
             }
-            if ((p[4] == p[5]) && (p[5] == p[6]) && (p[2] != ' '))
+            /*
+            if ((p[1] == p[2]) && (p[2] == p[3]) && (p[1] != ' '))
+            {
+                lmao = true;
+                Console.WriteLine("Wygrywa " + p[1]);
+            }*/ //Zamiennik
+            if ((p[4] == p[5]) && (p[5] == p[6]) && (p[4] != ' '))
             {
                 lmao = true;
                 Console.WriteLine("Wygrywa " + p[4]);
